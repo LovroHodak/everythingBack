@@ -6,6 +6,6 @@ const testUserSchema = mongoose.Schema({
     }
 })
 
-const TestUser = mongoose.model("about", testUserSchema)
+const TestUser = mongoose.model("testUsers", testUserSchema)
 
 module.exports = TestUser;
