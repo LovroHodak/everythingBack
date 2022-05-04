@@ -7,7 +7,7 @@ module.exports = mongoose
     useUnifiedTopology: true,
   })
   .then(() => {
-    console.log("DB panfu connected");
+    console.log("DB connected");
   })
   .catch((err) => {
     console.log("Error: ", err);

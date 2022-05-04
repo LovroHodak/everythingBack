@@ -1,4 +1,6 @@
-require("dotenv").config();
+//require("dotenv").config();
+require("./config/db.config")
+
 const express = require("express");
 const app = express();
 
@@ -30,7 +32,6 @@ app.use(bodyParser.json()); //crucial for post requests from client
 
 const testUsersRoutes = require('./routes/testUser.routes')
 app.use('/api', testUsersRoutes)
-
 
 const PORT = process.env.PORT;
 

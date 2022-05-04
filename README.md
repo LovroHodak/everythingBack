@@ -21,7 +21,7 @@ npm i express mongoose dotenv
 NODE INDEX.js -> server should be running
 
 1. db.config.js
-   require("dotenv").config();
+   require("./config/db.config")
    const mongoose = require("mongoose");
 
 module.exports = mongoose
@@ -90,3 +90,12 @@ git push -u origin main
 6. npm i cors
 
 7. npm i body-parser
+
+8. index.js
+-added cors
+-added body-parser
+-added app.use()
+-added routes
+
+9. testUser.routes.js
+-added GET and POST route (both old and new way (await))
